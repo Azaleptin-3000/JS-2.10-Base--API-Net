@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Tasks 2.10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Решение задания по написанию кода<br/></h1>
+        <h2>2.10. API браузера. Взаимодействие с сетью</h2>
+
+        <!-- Первая таблица пользователей -->
+        <h3>Список пользователей</h3>
+        <table id="users-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Имя</th>
+                    <th>Email</th>
+                    <th>Действие</th> <!-- Колонка для кнопок действий (Редактировать/Удалить) -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Пользователи будут добавляться здесь -->
+            </tbody>
+        </table>
+
+        <!-- Форма для добавления нового пользователя -->
+        <h4>Добавить нового пользователя</h4>
+        <form id="userForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="avatar">Выберите аватар:</label>
+                <input type="file" id="avatar" name="avatar">
+            </div>
+            <button type="submit">Добавить пользователя</button>
+        </form>
+
+        <div id="response"></div>
+    </div>
+
+    <!-- Вторая таблица -->
+    <h3>Таблица пользователей</h3>
+    <table class="last-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Имя</th>
+                <th>Email</th>
+                <th>Действия</th> <!-- Колонка для кнопок -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Пользователи будут добавлены сюда -->
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <button id="addUserButton">Добавить пользователя</button>
+        <button id="deleteUserButton">Удалить пользователя</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

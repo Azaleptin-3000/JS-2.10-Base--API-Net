@@ -1,0 +1,190 @@
+/* Общие стили для страницы */
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #d8e4ff; /* Цвет фона */
+    margin: 0;
+    padding: 20px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: block; /* Убираем flex для html и body */
+}
+
+.content {
+    width: 100%; /* Даем 100% ширины */
+    margin: 0;
+    text-align: center;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 30px;
+    color: rgb(77, 5, 132);
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px; /* Добавим небольшой отступ сверху для красоты */
+}
+
+h2 {
+    font-size: 32px;
+    color: #419beb;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 0;
+}
+
+h3 {
+    font-size: 25px;
+    color: #23002f;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 0;
+}
+
+h4 {
+    font-size: 20px;
+    color: #23002f;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 0;
+}
+
+/* Стили для таблиц */
+table {
+    width: 50%;
+    margin: 10px auto; /* Увеличен отступ сверху */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left; /* Текст в ячейках выровнен по левому краю */
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center; /* Заголовки таблицы по центру */
+}
+
+/* Специальные стили для второй таблицы пользователей */
+.last-table {
+    width: 70%; /* Увеличиваем ширину второй таблицы до 70% */
+    margin-top: 40px; /* Увеличенный отступ сверху */
+}
+
+.last-table th:nth-child(1), /* Первая колонка "ID" */
+.last-table td:nth-child(1) {
+    width: 20%;
+}
+
+.last-table th:nth-child(2), /* Вторая колонка "Имя" */
+.last-table td:nth-child(2) {
+    width: 30%;
+}
+
+.last-table th:nth-child(3), /* Третья колонка "Email" */
+.last-table td:nth-child(3) {
+    width: 20%;
+}
+
+/* Стили для формы */
+form {
+    margin-top: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#response {
+    margin-top: 20px;
+    color: green;
+}
+
+/* Кнопки редактирования, сохранения и удаления */
+.edit-btn, .save-btn, .delete-btn {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.save-btn {
+    background-color: #008CBA;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ff4c4c;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.save-btn:hover {
+    background-color: #007bb5;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+
+/* Контейнер для кнопок */
+.button-container {
+    display: flex; /* Используем flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px; /* Отступы между кнопками */
+}
+
+button:hover {
+    background-color: #45a049;
+}

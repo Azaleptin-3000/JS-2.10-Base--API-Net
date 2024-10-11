@@ -1,0 +1,7 @@
+{
+  "users": [
+    { "id": 1, "name": "John Doe", "email": "john@gmail.com", "avatar": "./avatars/john.png" },
+    { "id": 2, "name": "Jane Smith", "email": "jane@gmail.com", "avatar": "./avatars/jane.png" },
+    { "id": 3, "name": "Mark Brown", "email": "mark@gmail.com", "avatar": "./avatars/mark.png"  }
+  ]
+}
